@@ -14,6 +14,11 @@ import matplotlib.pyplot as plt
 
 import settings
 
+# using LaTeX settings, needs installation
+plt.rcParams["text.usetex"] = True
+plt.rcParams["font.family"] = "serif"
+plt.rcParams["font.serif"] = ["Computer Modern Roman"] 
+
 
 def load_by_year(path):
     """Return {year: [sorted authors]} from the CSV."""
